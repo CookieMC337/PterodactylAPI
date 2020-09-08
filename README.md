@@ -1,33 +1,3 @@
-# Pterodactyl PHP SDK
-
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Total Downloads][ico-downloads]][link-downloads]
-[![Software License][ico-license]](LICENSE.md)
-![Coverage][ico-coverage]
-
-## Important
-**As we are upgrading it to support version 0.7.x, some APIs are still not integrated, and we can't guarantee that there are no bugs. You can see a list that what we completed and planned below. Unless you already know the possible consequences, don't use it in production.**
-
-## ToDo List
-The following ticked items are upgraded & tested.
-### Server
-All done, you can see available functions below.
-
-### User
-All done, you can see available functions below.
-
-### Node
-- [x] $pterodactyl->nodes();
-- [ ] $pterodactyl->node($nodeId);
-- [ ] $pterodactyl->createNode(array $data);
-- [ ] $pterodactyl->updateNode($nodeId, array $data);
-- [ ] $pterodactyl->deleteNode($nodeId);
-
-#### Node Instance
-- [ ] $node->update(array $data);
-- [ ] $node->delete();
-
-## Install
 
 To install the SDK in your project you need to require the package via [composer](http://getcomposer.org):
 
@@ -184,16 +154,3 @@ $server->rebuild();
 $server->power($action); //'start', 'stop', 'restart', 'kill
 $server->command($command);
 ```
-
-## License
-
-`hcgcloud/pterodactyl-sdk` is licensed under the MIT License (MIT). Please see the
-[license file](LICENSE.md) for more information.
-
-[ico-version]: https://img.shields.io/packagist/v/hcgcloud/pterodactyl-sdk.svg?style=flat-square
-[ico-license]: https://img.shields.io/badge/license-MIT-green.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/hcgcloud/pterodactyl-sdk.svg?style=flat-square
-[ico-coverage]: https://api.codacy.com/project/badge/Grade/aae8d10d1da04cbda8723e56bbfd71dd
-
-[link-packagist]: https://packagist.org/packages/hcgcloud/pterodactyl-sdk
-[link-downloads]: https://packagist.org/packages/hcgcloud/pterodactyl-sdk
